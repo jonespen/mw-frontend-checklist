@@ -7,17 +7,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
   	copy: {
-  		dist: {
-  			files: {
-  				'_site_git/' : '_site/**'
-  			}
-  		},
   		css : {
   			files: {
   				'_site/assets/css/main.css': 'assets/css/main.css'
   			}
   		}
   	},
+
   	shell: {
   		jekyll: {
   			command: 'rm -rf _site/*; jekyll build',
@@ -54,6 +50,7 @@ module.exports = function(grunt) {
   		files: ['assets/scss/{,*/}*.{scss,sass}'],
   		tasks: ['compass:server', 'copy:css']
   	},
+  	
   	jekyllSources: {
   		files: [
           // capture all except css and /_site content
