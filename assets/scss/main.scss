@@ -1,0 +1,32 @@
+@import "../components/normalize-scss/normalize";
+
+$pink: #f43a6d;
+$link-color: $pink;
+
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	background: #fafafa;
+}
+
+a {
+	color: $link-color;
+}
+
+code {
+	background: #ffc;
+}
+
+ol {
+	padding-left: 0;
+	li {
+		margin-bottom: rhythm(.5);
+	}
+	ol, ul {
+		padding-left: 40px;
+		margin-top: rhythm(.5);
+		li {
+			margin-bottom: 0;
+		}
+	}
+}

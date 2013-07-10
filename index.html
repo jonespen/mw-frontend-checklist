@@ -1,0 +1,16 @@
+---
+layout: default
+title: mw checklist
+---
+
+{% capture performance %}
+	{% include performance.markdown %}
+{% endcapture %}
+
+{% capture accessibility %}
+	{% include accessibility.markdown %}
+{% endcapture %}
+
+{{ performance | markdownify }}
+
+{{ accessibility | markdownify }}
