@@ -1,5 +1,5 @@
 _site
-bower_components
+# bower_components
 .DS_Store
 *.sass-cache*
 node_modules
