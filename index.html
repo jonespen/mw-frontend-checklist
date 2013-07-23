@@ -10,6 +10,27 @@ layout: default
 	{% include accessibility.markdown %}
 {% endcapture %}
 
-{{ performance | markdownify }}
+{% capture seo %}
+	{% include seo.markdown %}
+{% endcapture %}
 
-{{ accessibility | markdownify }}
+{% capture sources %}
+	{% include sources.markdown %}
+{% endcapture %}
+
+<div class="lists">
+
+	{{ performance | markdownify }}
+
+	{{ accessibility | markdownify }}
+
+	{{ seo | markdownify }}
+
+
+</div>
+
+<div class="sources">
+
+	{{ sources | markdownify }}
+
+</div>

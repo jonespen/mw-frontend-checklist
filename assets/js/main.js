@@ -1,4 +1,4 @@
-var $list = $('main > ol');
+var $list = $('.lists ol');
 
 $list.find('> li').each(function() {
 	var $this = $(this),

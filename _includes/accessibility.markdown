@@ -3,7 +3,7 @@
 
 1. Semantic HTML. Use `hN` for headings, `p` for paragraphs, `ul`/`ol`s for lists and so on. Beware of [document outline](https://developer.mozilla.org/en-US/docs/Web/HTML/Sections_and_Outlines_of_an_HTML5_document)!
     * A simple way to test this is to disable css using The Web Developer plugin ([firefox](https://addons.mozilla.org/en-US/firefox/addon/web-developer/), [chrome](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en))
-1. Progressive enhancement: Major functionality like main navigation and search should work without js or flash
+1. Progressive enhancement: Major functionality like main navigation and search should work without JavaScript or Flash
 1. All content should be accessible by keyboard
     * Don't mess with `tabindex`
     * Remember to style `:focus`

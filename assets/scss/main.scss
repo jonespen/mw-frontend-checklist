@@ -39,7 +39,7 @@ $link-color: $pink;
 
 body {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: rhythm(1) auto 0;
 	background: #fafafa;
 	//@include debug-vertical-alignment();
 }
@@ -108,8 +108,15 @@ main {
 	clear: both;
 }
 
-ol {
+ol, ul {
 	margin-top: 0;
+}
+
+ul {
+	padding-left: 0;
+}
+
+.lists ol {
 	counter-reset: countah;
 	list-style: none;
 	> li {

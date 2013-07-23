@@ -543,7 +543,7 @@ html {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000340}}
 body {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1.5em auto 0;
   background: #fafafa;
 }
 
@@ -641,13 +641,22 @@ main {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003111}}
-ol {
+ol, ul {
   margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003115}}
+ul {
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003119}}
+.lists ol {
   counter-reset: countah;
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003115}}
-ol > li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003122}}
+.lists ol > li {
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
   padding-bottom: 0.3125em;
@@ -657,8 +666,8 @@ ol > li {
   border-color: #ddd;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003122}}
-ol > li:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003129}}
+.lists ol > li:before {
   content: counter(countah);
   counter-increment: countah;
   position: absolute;
@@ -670,19 +679,19 @@ ol > li:before {
   width: 20px;
   color: #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003132}}
-ol > li.accordion:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003139}}
+.lists ol > li.accordion:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003134}}
-ol > li.accordion:hover:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003141}}
+.lists ol > li.accordion:hover:before {
   color: #f43a6d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003140}}
-ol > li.on:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003147}}
+.lists ol > li.on:before {
   color: #f43a6d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003145}}
-ol ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003152}}
+.lists ol ul {
   display: none;
 }
