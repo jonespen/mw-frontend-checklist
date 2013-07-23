@@ -9,7 +9,7 @@ $list.find('> li').each(function() {
 	}
 });
 
-$list.on('click', '.accordion', function() {
+$list.on('click', '.accordion', function() { 
 	var $this = $(this);
 
 	$this.find('ul').slideToggle('fast').end().toggleClass('on');

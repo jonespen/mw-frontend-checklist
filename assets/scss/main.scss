@@ -5,7 +5,7 @@ $h2-font-size: 1.25  * $base-font-size;
 $pink: #f43a6d;
 $link-color: $pink;
 
-@import "../components/normalize-scss/normalize";
+@import "../bower_components/normalize.scss/normalize";
 
 @mixin clearfix {
 	&:before,

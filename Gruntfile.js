@@ -28,8 +28,8 @@ module.exports = function(grunt) {
   			cssDir: 'assets/css',
   			generatedImagesDir: 'assets/css/images/generated',
   			imagesDir: 'assets/images',
-  			javascriptsDir: 'assets/scripts',
-  			importPath: 'components',
+  			javascriptsDir: 'assets/js',
+  			importPath: 'bower_components',
   			httpImagesPath: 'assets/images',
   			httpGeneratedImagesPath: 'assets/images/generated',
   			relativeAssets: false
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
   	jekyllSources: {
   		files: [
           // capture all except css and /_site content
-          '*.html', '*.yml', 'assets/js/**.js', 'performance/**', '_layouts/**', '_includes/**', '**/*.markdown', '!_site/**'
+          '*.html', '*.yml', 'assets/js/**.js', 'performance/**', '_layouts/**', '_includes/**', '**/*.markdown', '!_site/**', 'bower_components/jquery/jquery.min.js'
           ],
           tasks: ['shell:jekyll']
       }
