@@ -62,12 +62,16 @@ audio:not([controls]) {
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003114}}
 html {
-  font-family: sans-serif;
+  font-family: "PT Sans", sans-serif;
   /* 1 */
+  font-size: 100%;
+  /* 3 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  /* Establish a vertical rhythm unit using $base-line-height. */
+  line-height: 1.5em;
 }
 
 /**
@@ -102,6 +106,21 @@ a:hover {
    Typography
    ========================================================================== */
 /**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003181}}
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003185}}
+blockquote {
+  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
+  margin: 1.5em 40px;
+}
+
+/**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
@@ -109,9 +128,50 @@ a:hover {
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
+  line-height: 1.5em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.75em;
   margin-bottom: 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003211}}
+h2 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003217}}
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003223}}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003229}}
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003235}}
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
 }
 
 /**
@@ -169,6 +229,7 @@ pre,
 samp {
   font-family: monospace, serif;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 /**
@@ -220,6 +281,40 @@ sub {
 /* ==========================================================================
    Lists
    ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003368}}
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003376}}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003382}}
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/components\/normalize-scss\/_normalize\.scss}line{font-family:\00003392}}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
 /* ==========================================================================
    Embedded content
    ========================================================================== */
@@ -434,37 +529,160 @@ table {
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000361}}
+* html {
+  font-size: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000364}}
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000340}}
 body {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   background: #fafafa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000347}}
 a {
   color: #f43a6d;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000349}}
+a:hover {
+  text-decoration: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000354}}
 code {
   background: #ffc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000358}}
 ol {
   padding-left: 0;
+  clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000322}}
-ol li {
-  margin-bottom: 0.75em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000364}}
 ol ol, ol ul {
   padding-left: 40px;
-  margin-top: 0.75em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000367}}
 ol ol li, ol ul li {
   margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000373}}
+#mw-logo, #check {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  width: 2em;
+  height: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000380}}
+#mw-logo {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000384}}
+#check {
+  float: left;
+  margin-left: -2.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000387}}
+#check .icon {
+  fill: #2ecc71;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000392}}
+h1 {
+  font-size: 1em;
+  line-height: 2.25em;
+  font-style: italic;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000398}}
+h2 {
+  margin-bottom: 0.6em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003102}}
+header {
+  /*
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  margin-bottom: 0.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000312}}
+header:before, header:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000317}}
+header:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\0000326}}
+header {
+  *zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003107}}
+main {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003111}}
+ol {
+  margin-top: 0;
+  counter-reset: countah;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003115}}
+ol > li {
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.3125em;
+  border-top-style: solid;
+  border-top-width: 0em;
+  padding-top: 0.375em;
+  border-color: #ddd;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003122}}
+ol > li:before {
+  content: counter(countah);
+  counter-increment: countah;
+  position: absolute;
+  right: -moz-calc(100% + 10px);
+  right: -o-calc(100% + 10px);
+  right: -webkit-calc(100% + 10px);
+  right: calc(100% + 10px);
+  text-align: right;
+  width: 20px;
+  color: #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003132}}
+ol > li.accordion:hover {
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003134}}
+ol > li.accordion:hover:before {
+  color: #f43a6d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003140}}
+ol > li.on:before {
+  color: #f43a6d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jon\.kvisler\/Sites\/labs\/mw-frontend-checklist\/assets\/scss\/main\.scss}line{font-family:\00003145}}
+ol ul {
+  display: none;
 }

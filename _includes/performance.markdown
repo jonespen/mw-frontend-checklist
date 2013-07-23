@@ -1,7 +1,9 @@
+
 ## Performance
 
 1. Compress components with gzip
-2. CSS in `<head>`, JS before `</body>`
+1. CSS in `<head>`
+1. JS before `</body>`
 3. Concatenate and minify JS and CSS
     * [SquishIt](http://nuget.org/packages/SquishIt/)
     * [System.Web.Optimization](http://nuget.org/packages/microsoft.web.optimization) 

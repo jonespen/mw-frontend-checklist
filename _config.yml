@@ -1,3 +1,4 @@
-name: mw frontend checklist
+name: MW front-end checklist
+id: mw-frontend-checklist
 pygments: true
 markdown: rdiscount

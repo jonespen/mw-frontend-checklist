@@ -9,7 +9,8 @@ module.exports = function(grunt) {
   	copy: {
   		css : {
   			files: {
-  				'_site/assets/css/main.css': 'assets/css/main.css'
+          '_site/assets/css/main.css': 'assets/css/main.css',
+          '_site/assets/js/main.js': 'assets/js/main.js'
   			}
   		}
   	},

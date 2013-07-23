@@ -1,16 +1,54 @@
-@import "../components/normalize-scss/normalize";
-
+$base-font-family: 'PT Sans', sans-serif;
+$base-font-size: 16px;
+$strict-normalize: false;
+$h2-font-size: 1.25  * $base-font-size;
 $pink: #f43a6d;
 $link-color: $pink;
 
+@import "../components/normalize-scss/normalize";
+
+@mixin clearfix {
+	&:before,
+	&:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	&:after {
+	    clear: both;
+	}
+
+	/*
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+
+	& {
+	    *zoom: 1;
+	}
+}
+
+@mixin calc($property, $expression) { 
+	#{$property}: -moz-calc(#{$expression}); 
+	#{$property}: -o-calc(#{$expression}); 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
+} 
+
+@include establish-baseline;
+
 body {
-	max-width: 960px;
+	max-width: 800px;
 	margin: 0 auto;
 	background: #fafafa;
+	//@include debug-vertical-alignment();
 }
 
 a {
 	color: $link-color;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 code {
@@ -19,14 +57,92 @@ code {
 
 ol {
 	padding-left: 0;
+	clear: both;
 	li {
-		margin-bottom: rhythm(.5);
+		//margin-bottom: rhythm(.25);
 	}
 	ol, ul {
 		padding-left: 40px;
-		margin-top: rhythm(.5);
+		//margin-top: rhythm(.25);
 		li {
 			margin-bottom: 0;
 		}
+	}
+}
+
+#mw-logo, #check {
+	@include leader(1, $h1-font-size);
+	@include trailer(1, $h1-font-size);
+	width: 2em;
+	height: 2em;
+}
+
+#mw-logo {
+	float: right;
+}
+
+#check {
+	float: left;
+	margin-left: -2.5em;
+	.icon {
+		fill: #2ecc71;
+	}
+}
+
+h1 {
+	@include adjust-font-size-to(16px, 1.5);
+	font-style: italic;
+	float: left;
+}
+
+h2 {
+	@include trailer(.5, $h2-font-size);
+}
+
+header {
+	@include clearfix;
+	margin-bottom: rhythm(.5);
+}
+
+main {
+	clear: both;
+}
+
+ol {
+	margin-top: 0;
+	counter-reset: countah;
+	list-style: none;
+	> li {
+		@include trailing-border(1px, .25);
+		@include leading-border(0px, .25);
+		
+		//@include rhythm(.5, 0, .5, 0, $base-font-size);
+		border-color: #ddd;
+		position: relative;
+		&:before {
+			content: counter(countah);
+			counter-increment: countah;
+			position: absolute;
+			@include calc(right, "100% + 10px");
+			text-align: right;
+			width: 20px;
+			color: #ccc;
+		}
+		&.accordion {
+			&:hover {
+				cursor: pointer;
+				&:before {
+					color: $pink;
+				}
+			}
+		}
+		&.on {
+			&:before {
+				color: $pink;
+			}
+		}
+	}
+	ul {
+		display: none;
 	}
 }
