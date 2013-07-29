@@ -18,6 +18,10 @@ layout: default
 	{% include sources.markdown %}
 {% endcapture %}
 
+{% capture other %}
+	{% include other.markdown %}
+{% endcapture %}
+
 <div class="lists">
 
 	{{ performance | markdownify }}
@@ -26,6 +30,7 @@ layout: default
 
 	{{ seo | markdownify }}
 
+	{{ other | markdownify }}
 
 </div>
 
