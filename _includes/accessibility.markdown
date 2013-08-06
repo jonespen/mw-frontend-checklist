@@ -1,4 +1,3 @@
-
 ## Accessibility
 
 1. Semantic HTML. Use `hN` for headings, `p` for paragraphs, `ul`/`ol`s for lists and so on. Beware of [document outline](https://developer.mozilla.org/en-US/docs/Web/HTML/Sections_and_Outlines_of_an_HTML5_document)!
@@ -6,6 +5,7 @@
 1. Progressive enhancement: Major functionality like main navigation and search should work without JavaScript or Flash
 1. All content should be accessible by keyboard
     * [Creating logical tab order with `tabindex`](http://www.w3.org/WAI/GL/wiki/Creating_Logical_Tab_Order_with_the_Tabindex_Attribute)
+    * [How–to: Use Skip Navigation links](http://a11yproject.com/posts/skip-nav-links/)
     * Remember to style `:focus`
 1. Alternative text for images
     * [Writing good alt text](http://www.456bereastreet.com/archive/200811/writing_good_alt_text/)
@@ -25,3 +25,5 @@
 1. Add video captions
     * [HTML5 video captions](http://www.3playmedia.com/how-it-works/how-to-guides/html5-video-captioning/)
     * [YouTube captions](https://support.google.com/youtube/answer/2734705?hl=en&ref_topic=2734696)
+1. Resources
+    * [Screen Reader User Survey #4 Results](http://webaim.org/projects/screenreadersurvey4/)
